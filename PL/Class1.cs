@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project01_7735_5114_dotNet5780
+namespace PL
 {
     public class Class1
     {
-
     }
 }
