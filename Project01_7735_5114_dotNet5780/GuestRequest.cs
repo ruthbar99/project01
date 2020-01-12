@@ -7,32 +7,32 @@ using System.Threading.Tasks;
 //BE GuestRequest
 namespace Project01_7735_5114_dotNet5780
 {
-    class GuestRequest
+    public class GuestRequest
     {
-        static int GeneralGrk = 10000001;//general counter for guest request
-        int GuestRequestKey;
-        string PrivateName { get; set; }
-        string FamilyName { get; set; }
-        string MailAddress { get; set; }
-        bool Status { get; set; }
-        DateTime RegistrationDate { get; set; }
-        DateTime EntryDate { get; set; }
-        DateTime ReleaseDate { get; set; }
-        int Area { get; set; }
-        int Type { get; set; }
-        int Adults { get; set; }
-        int children { get; set; }
-        int pool { get; set; }
-        int Jacuzzi { get; set; }
-        int Garden { get; set; }
-        int ChildrensAttractions { get; set; }
-        bool SmokingArea { get; set; }
-        bool accessible { get; set; }//Accessibility for the disabled
+   
+        public int GuestRequestKey { get; set; }
+        public string PrivateName { get; set; }
+        public string FamilyName { get; set; }
+        public string MailAddress { get; set; }
+        public bool Status { get; set; }
+        public DateTime RegistrationDate { get; set; }
+        public DateTime EntryDate { get; set; }
+        public DateTime ReleaseDate { get; set; }
+        public int Area { get; set; }
+        public int Type { get; set; }
+        public int Adults { get; set; }
+        public int children { get; set; }
+        public int pool { get; set; }
+        public int Jacuzzi { get; set; }
+        public int Garden { get; set; }
+        public int ChildrensAttractions { get; set; }
+        public bool SmokingArea { get; set; }
+        public bool accessible { get; set; }//Accessibility for the disabled
         public void ToString(int GuestRequestKey)
         {
 
         }
-
+       
 
 
     }

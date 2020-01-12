@@ -8,17 +8,19 @@ using System.Threading.Tasks;
 //Connects the client to a hosting unit
 namespace Project01_7735_5114_dotNet5780
 {
-    class Order
+    public class Order
     {
         int HostingUnitKey;
-        int GuestRequestKey;
-        int OrderKey;
-        string Status;
-        DateTime CreateDate;
-        DateTime OrderDate;
+        public GuestRequest GuestRequestKey { get; set; }
+        public int OrderKey { get; set; }
+        public string Status { get; set; }
+        public DateTime CreateDate { get; set; }
+        public DateTime OrderDate { get; set; }
         public void ToString(int GuestRequestKey)
         {
 
         }
+
+       
     }
 }

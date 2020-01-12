@@ -42,10 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Dal_imp.cs" />
     <Compile Include="Idal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DS\DS.csproj">
+      <Project>{37486d6d-9e58-45c3-ae08-f6bef827b347}</Project>
+      <Name>DS</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Project01_7735_5114_dotNet5780\BE.csproj">
       <Project>{cfd6b00b-3d54-48ed-b266-a9802bffcde9}</Project>
       <Name>BE</Name>

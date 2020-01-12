@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 //BE Host
 namespace Project01_7735_5114_dotNet5780
 {
-    class Host
+    public class Host
     {
         int HostKey;//id
         string PrivateName { get; set; }

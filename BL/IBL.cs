@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Project01_7735_5114_dotNet5780;
 
-namespace DAL
+namespace BL
 {
-    interface Idal
+    interface IBL
     {
         //guest request
         void AddGuestRequest(GuestRequest guest);
@@ -20,6 +20,7 @@ namespace DAL
 
         //order
         void AddOrder(Order order);
+        // { if (order.GuestRequestKey.EntryDate <= order.GuestRequestKey.ReleaseDate) throw Exception; }
         void UpdateOrder(Order order);
 
         //lists
@@ -29,5 +30,16 @@ namespace DAL
         List<Order> GetAllOrders();
 
         List<BankBranch> GetBankBranches();
+
+
+        List<HostingUnit> GetHostingUnitsByDates(DateTime EntryDate, int Days);
+        int countDaysBetween(DateTime fromDate, DateTime endDate);
+        int countOrders(int days);
+        List<GuestRequest> GetGuestRequests(Delegate del);
+        int getOrdersByGuestRequest(GuestRequest request);
+        int getOrdersByHostingUnit(HostingUnit hostingUnit);
+
+
+        List<>
     }
 }
