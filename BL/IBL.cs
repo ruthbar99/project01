@@ -24,7 +24,6 @@ namespace BL
         void UpdateOrder(Order order);
 
         //lists
-
         List<HostingUnit> GetAllHostingUnits();
         List<GuestRequest> GetAllGuestRequests();
         List<Order> GetAllOrders();
